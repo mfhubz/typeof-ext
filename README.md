@@ -1,4 +1,4 @@
-# typeof #
+# typeof-ext #
 
 A node.js module to get, check or compare real typeof.
 
@@ -7,14 +7,14 @@ A node.js module to get, check or compare real typeof.
 From your proyect:
 
 ```
-    $ npm install --save typeof
+    $ npm install --save typeof-ext
 ```
 
 ## Usage ##
 
 ```
     // use typeOf instead of typeof to avoid name colissions.
-    var typeOf = require('./typeof');
+    var typeOf = require('./typeof-ext');
 
 ```
   - Get types
