@@ -43,10 +43,14 @@ From your proyect:
     console.log(typeOf.isNull(null));               // return true
     console.log(typeOf.isUndefined(undefined));     // return true
     
-    console.log(typeOf.is(1, 'string'));            // return false
     console.log(typeOf.is(1, 'number'));            // return true
-    
-    console.log(typeOf.areSame(1, 1000));           // return true
+    console.log(typeOf.is(1, 'string'));            // return false
+```
+
+  - Compare typeof
+
+```    
+    console.log(typeOf.areEqual(1, 1000));           // return true
 ```
 
 ## Tests ##
