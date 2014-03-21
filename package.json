@@ -1,9 +1,9 @@
 {
   "name": "typeof",
   "version": "0.0.1",
-  "description": "Get, compare and check typeofs",
+  "description": "A node.js module to get, compare and check types",
   "keywords": [
-    "typeof", "isNull", "isArray"
+    "node.js", "typeof", "isFunction", "isObject", "isArray", "isString", "isNumber", "isBoolean", "isDate", "isRegexp", "isError", "isNull", "isUndefined"
   ],
   "repository": {
     "type": "git",
