@@ -1,9 +1,9 @@
 /*!
- * typeOf
+ * typeof-ext
  * Copyright(c) 2014 mfhubz
  * MIT Licensed
  *
- * Get, check or compare real typeof.
+ * A node.js module to get, check or compare real types.
  */
 
 exports = module.exports = (function() {
