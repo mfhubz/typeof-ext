@@ -1,28 +1,40 @@
 {
-  "name": "typeof",
-  "version": "0.0.1",
-  "description": "A node.js module to get, compare and check types",
-  "keywords": [
-    "node.js", "typeof", "isFunction", "isObject", "isArray", "isString", "isNumber", "isBoolean", "isDate", "isRegexp", "isError", "isNull", "isUndefined"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mfhubz/typeof.git"
-  }
-  "author": {
-    "name": "mfhubz",
-    "email": "mfhubz@gmail.com",
-    "url": "http://www.mfhubz.com/"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
+    "name": "typeof",
+    "version": "0.0.1",
+    "description": "A node.js module to get, compare and check types",
+    "keywords": [
+        "node.js",
+        "typeof",
+        "isFunction",
+        "isObject",
+        "isArray",
+        "isString",
+        "isNumber",
+        "isBoolean",
+        "isDate",
+        "isRegexp",
+        "isError",
+        "isNull",
+        "isUndefined"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/mfhubz/typeof.git"
+    },
+    "author": {
+        "name": "mfhubz",
+        "email": "mfhubz@gmail.com",
+        "url": "http://www.mfhubz.com/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/MIT"
+        }
+    ],
+    "main": "./index",
+    "dependencies": {},
+    "devDependencies": {
+        "mocha": "1.x.x"
     }
-  ],
-  "main": "./index",
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "1.x.x"
-  }
 }
