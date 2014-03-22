@@ -1,6 +1,6 @@
 {
     "name": "typeof-ext",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A node.js module to get, compare and check types",
     "keywords": [
         "typeof",
