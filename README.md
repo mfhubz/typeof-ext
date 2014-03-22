@@ -50,6 +50,9 @@ From your proyect:
     
     typeOf.is(1, 'number');            // return true
     typeOf.is(1, 'string');            // return false
+
+    typeOf.in(1, ['number', 'date']);  // return true
+    typeOf.in(1, ['string', 'null']);  // return false
 ```
 
   - Compare types
@@ -74,3 +77,4 @@ From your proyect:
 [The MIT License](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2014 mfhubz.
+
