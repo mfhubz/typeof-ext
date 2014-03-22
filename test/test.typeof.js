@@ -72,6 +72,15 @@ suite('typeOf', function() {
     assert.equal('type must be a string', typeOf.is(undefined, undefined).message);
   });
 
+  // Check with in
+  test('typeOf.in should return boolean or Error', function() {
+    assert.equal(true, typeOf.in(undefined, ['undefined', 'null']));
+    assert.equal(false, typeOf.in(undefined, ['array', 'number']));
+    assert.equal('arr must be an array', typeOf.in(undefined, undefined).message);
+    assert.equal('arr only allow function,object,array,string,boolean,number,date,regexp,error,null,undefined values', typeOf.in(undefined, [undefined, 'number']).message);
+
+  });
+
   // Compare
   test('typeOf.areEqual should return boolean', function() {
     assert.equal(true, typeOf.areEqual([], ['undefined', 2]));
