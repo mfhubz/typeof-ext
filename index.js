@@ -7,7 +7,20 @@
  */
 
 exports = module.exports = (function() {
-    
+    var types = [
+        'function',
+        'object',
+        'array',
+        'string',
+        'boolean',
+        'number',
+        'date',
+        'regexp',
+        'error',
+        'null',
+        'undefined'
+    ];
+
     function typeOf(a) {
         if (a === null) return 'null';
         if (a === undefined) return 'undefined';
@@ -59,27 +72,27 @@ exports = module.exports = (function() {
     };
 
     typeOf.is = function(a, type) {
-        var types = [
-                'function',
-                'object',
-                'array',
-                'string',
-                'boolean',
-                'number',
-                'date',
-                'regexp',
-                'error',
-                'null',
-                'undefined'
-            ];
         if (!typeOf.isString(type)) {
             return new Error('type must be a string');
         }
-        for (var i = types.length - 1; i >= 0; i--) {
-            if (type === types[i]) {
-                return (typeOf(a) === type);
+        if (types.indexOf(type) != -1) {
+            return (typeOf(a) === type);
+        }
+        return false;
+    };
+
+    typeOf.in = function(a, arr) {
+        if (!typeOf.isArray(arr)) {
+            return new Error('arr must be an array');
+        }
+        for (var i = arr.length - 1; i >= 0; i--) {
+            if (types.indexOf(arr[i]) === -1) {
+                return new Error('arr only allow ' + types.toString() + ' values');
             }
-        };
+            if (typeOf.is(a, arr[i])) {
+                return true;
+            }
+        }
         return false;
     };
 
